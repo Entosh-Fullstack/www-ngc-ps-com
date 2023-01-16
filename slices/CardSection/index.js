@@ -4,7 +4,7 @@ import { Flex, VStack, Box, useBreakpointValue } from "@chakra-ui/react";
 
 
 const CardsSection = ({ slice }) => (
-  <Flex w="full">
+  <Flex w="full" backgroundColor="#e5e1dc">
     <VStack
       direction="row"
       justify="center"

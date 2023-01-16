@@ -10,10 +10,10 @@ const Layout = ({ navigation, children, settings, footer }) => {
                 settings={settings}
             />
             {children}
-            <Footer
+            {/* <Footer
                 footer={footer}
                 settings={settings}
-            />
+            /> */}
         </div>
     );
 }

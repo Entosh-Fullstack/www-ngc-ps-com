@@ -8,7 +8,7 @@ import {
 import { PrismicRichText } from '@prismicio/react'
 
 const GridSection = ({ slice }) => (
-  <Flex w="full">
+  <Flex w="full" backgroundColor="#e5e1dc">
     <VStack
       w="full"
       justify="center"
