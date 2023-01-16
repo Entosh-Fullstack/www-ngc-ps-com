@@ -73,3 +73,32 @@ textarea::placeholder{
 .tablist button {
   min-height: 55px;
 }
+
+.dropbtn {
+  color: #000;
+  padding: 0;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* sample css for dropdown */
+.dropdown-content {
+  display: none;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block; }
+
