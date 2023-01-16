@@ -67,6 +67,15 @@ body .logo-burger-container img {
   width: 291px;
 }
 
+.navbar .dropdown {
+  margin-top: 11px;
+}
+.navbar .dropbtn {
+  color: #4c4f51;
+  font-size: 26px;
+  font-weight: 600;
+}
+
 @media only screen and (max-width: 600px) {
   li.chakra-breadcrumb__list-item.css-18biwo {
     display: flex;

@@ -173,7 +173,7 @@ export function Navigation({ navigation, settings }) {
               as={"nav"}
               spacing={4}
               bg="#fff"
-              pt={"24px"}
+              pt={"19px"}
               pb="25px"
               pl={{ base: "0", md: "41px" }}
               textAlign={{ base: "center", md: "left" }}
@@ -189,10 +189,14 @@ export function Navigation({ navigation, settings }) {
                     </PrismicLink>
 
                     {slice.items.length > 0 && (
-                      <Box color="#000" className="dropdown-content" onClick={onClose}>
+                      <Box
+                        color="#000"
+                        className="dropdown-content"
+                        onClick={onClose}
+                      >
                         {slice.items.map((item, i) => {
                           return (
-                            <Box key={i} >
+                            <Box key={i}>
                               <PrismicLink field={item.link}>
                                 <PrismicText field={item.name} />
                               </PrismicLink>
@@ -217,7 +221,7 @@ export function Navigation({ navigation, settings }) {
             >
               {navigation?.data.slices.map((slice, i) => {
                 return (
-                  <Menu key={slice.id} >
+                  <Menu key={slice.id}>
                     <PrismicLink field={slice.primary.link}>
                       <MenuButton>
                         <PrismicText field={slice.primary.name} />
@@ -225,7 +229,11 @@ export function Navigation({ navigation, settings }) {
                     </PrismicLink>
                     {slice.items.length > 0 && (
                       <Box width="100%">
-                        <MenuList color="#000" onClick={onClose} minWidth='100vw'>
+                        <MenuList
+                          color="#000"
+                          onClick={onClose}
+                          minWidth="100vw"
+                        >
                           {slice.items.map((item, i) => {
                             return (
                               <MenuItem key={i} justifyContent="center">
@@ -238,7 +246,6 @@ export function Navigation({ navigation, settings }) {
                         </MenuList>
                       </Box>
                     )}
-
                   </Menu>
                 );
               })}
