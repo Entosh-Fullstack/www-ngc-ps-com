@@ -152,7 +152,9 @@ export function Navigation({ navigation, settings }) {
             // pos={{ md: "absolute" }}
             pos={{ md: "fixed" }}
           >
+            {/* Desktop */}
             <Stack
+              display={{ base: "none", md: "flex" }}
               as={"nav"}
               spacing={4}
               pb="25px"
@@ -182,6 +184,44 @@ export function Navigation({ navigation, settings }) {
                       </Box>
                     )}
                   </Box>
+                );
+              })}
+            </Stack>
+            {/* Mobile */}
+            <Stack
+              display={{ base: "flex", md: "none" }}
+              as={"nav"}
+              spacing={4}
+              pb="25px"
+              bg="#fff"
+              pl={{ base: "0", md: "20px" }}
+              textAlign={{ base: "center", md: "left" }}
+            >
+              {navigation?.data.slices.map((slice, i) => {
+                return (
+                  <Menu key={slice.id} >
+                    <PrismicLink field={slice.primary.link}>
+                      <MenuButton>
+                        <PrismicText field={slice.primary.name} />
+                      </MenuButton>
+                    </PrismicLink>
+                    {slice.items.length > 0 && (
+                      <Box width="100%">
+                        <MenuList color="#000" onClick={onClose} minWidth='100vw'>
+                          {slice.items.map((item, i) => {
+                            return (
+                              <MenuItem key={i} justifyContent="center">
+                                <PrismicLink field={item.link}>
+                                  <PrismicText field={item.name} />
+                                </PrismicLink>
+                              </MenuItem>
+                            );
+                          })}
+                        </MenuList>
+                      </Box>
+                    )}
+
+                  </Menu>
                 );
               })}
             </Stack>
