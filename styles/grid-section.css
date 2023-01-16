@@ -1,39 +1,43 @@
 /* .css-15fwrin:last-child {
   border-right: solid 1px #2c2e35;
 } */
-.css-15fwrin:last-child {
+#grid-container .grid-item:last-child {
   border-right: none;
 }
 
+#grid-container .grid-item img {
+  height: 80%;
+}
+
 @media only screen and (max-width: 1279px) {
-  .css-15fwrin:nth-child(3n) {
+  #grid-container .grid-item:nth-child(3n) {
     border-right: none;
   }
 
-  .css-15fwrin:nth-last-child(-n + 3) {
+  #grid-container .grid-item:nth-last-child(-n + 3) {
     border-bottom: none;
   }
 }
 
 @media only screen and (max-width: 479px) {
-  .css-15fwrin:nth-child(3n) {
+  #grid-container .grid-item:nth-child(3n) {
     border-right: unset;
   }
 
-  .css-15fwrin:nth-last-child(3) {
+  #grid-container .grid-item:nth-last-child(3) {
     border-bottom: solid 1px #2c2e35;
   }
 
-  .css-15fwrin:nth-last-child(-n + 2) {
+  #grid-container .grid-item:nth-last-child(-n + 2) {
     border-bottom: unset;
   }
 
-  .css-15fwrin:nth-child(odd) {
+  #grid-container .grid-item:nth-child(odd) {
     border-left: none;
     border-right: none;
   }
 
-  .css-15fwrin:nth-child(even) {
+  #grid-container .grid-item:nth-child(even) {
     border-right: none;
     border-bottom: solid 1px #2c2e35;
   }

@@ -14,25 +14,25 @@ const GridSection = ({ slice }) => (
       justify="center"
       px={useBreakpointValue({ base: 4, md: 8 })}
       direction="row"
-      my="50px"
+      my="25px"
     >
       <Box
-        pt="55px"
+        pt="43px"
         _before={{
           content: `""`,
           position: "absolute",
           m: "auto",
           right: "0",
           left: "0",
-          mt: "-20px",
-          w: "84px",
-          borderTop: "2px solid #ef483e",
+          mt: "-8px",
+          w: "90px",
+          borderTop: "6px solid #ef483e",
         }}
       >
         <Box
           py="10px"
           color="#53575a"
-          fontSize={{ base: "3xl", lg: "4xl" }}
+          fontSize={{ base: "3xl", lg: "44px" }}
           lineHeight={1.2}
           textAlign="center"
         >
@@ -44,9 +44,10 @@ const GridSection = ({ slice }) => (
         flexWrap="wrap"
         direction="row"
         justify="center"
+        py="30px"
         // w={{ xl: "80em", base: "full" }}
         w={{ md: "90%", xl: "87%" }}
-      // borderLeft={{ base: "none", sm: "solid 1px #adadad" }}
+        id="grid-container"
       >
         {
           slice?.items?.map((item, i) =>
@@ -57,7 +58,7 @@ const GridSection = ({ slice }) => (
               justifyContent={"center"}
               flexDirection={"column"}
               w={{ base: "49%", sm: "33%", xl: "20%" }}
-              h={{ base: "auto", lg: "268px" }}
+              h={{ base: "auto", lg: "221px" }}
               p="0 15px"
               borderRight="solid 1px #2c2e35"
               borderLeft={{ base: "solid 1px #2c2e35", sm: "none" }}
@@ -65,9 +66,10 @@ const GridSection = ({ slice }) => (
               _hover={{
                 textDecoration: "none",
               }}
+              className="grid-item"
             >
               {item.image.url ?
-                <Flex h="auto" w="90%" mt="15px" justify="center">
+                <Flex h="auto" w="90%" justify="center" alignItems="center">
                   <Image src={item.image.url} alt={item.image.alt} />
                 </Flex>
 

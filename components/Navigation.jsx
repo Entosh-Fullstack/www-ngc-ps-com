@@ -1,7 +1,6 @@
 import * as prismicH from "@prismicio/helpers";
 import { PrismicLink, PrismicText } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
-
 import {
   Box,
   Flex,
@@ -19,8 +18,25 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+
+import React, { useState, useEffect } from "react";
+
 export function Navigation({ navigation, settings }) {
-  const { isOpen, onOpen, onClose, onToggle } = useDisclosure();
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
+  // Sidemenu scroll animation
+  const [stickyClass, setStickyClass] = useState("");
+  useEffect(() => {
+    window.addEventListener("scroll", stickNavbar);
+    return () => window.removeEventListener("scroll", stickNavbar);
+  }, []);
+  const stickNavbar = () => {
+    if (window !== undefined) {
+      let windowHeight = window.scrollY;
+      windowHeight > 0 ? setStickyClass("sticky-nav") : setStickyClass("");
+    }
+  };
+  // Sidemenu scroll animation
   return (
     <Box>
       <Flex
@@ -140,16 +156,15 @@ export function Navigation({ navigation, settings }) {
 
         {isOpen ? (
           <Box
+            className={`navbar ${stickyClass}`}
             bg={{ md: "#fff" }}
-            // h={{ md: "667px" }}
             h={{ md: "100vh" }}
-            w={{ md: "260px" }}
+            w={{ md: "367px" }}
             color={{ base: "#6c6f70", md: "#000" }}
             mr={{ base: "-24px", md: "unset" }}
             ml={{ base: "-24px", md: "unset" }}
             right={{ md: "0" }}
             top={"84px"}
-            // pos={{ md: "absolute" }}
             pos={{ md: "fixed" }}
           >
             {/* Desktop */}
@@ -157,10 +172,12 @@ export function Navigation({ navigation, settings }) {
               display={{ base: "none", md: "flex" }}
               as={"nav"}
               spacing={4}
-              pb="25px"
               bg="#fff"
-              pl={{ base: "0", md: "20px" }}
+              pt={"24px"}
+              pb="25px"
+              pl={{ base: "0", md: "41px" }}
               textAlign={{ base: "center", md: "left" }}
+              fontSize="26px"
             >
               {navigation?.data.slices.map((slice, i) => {
                 return (
@@ -170,6 +187,7 @@ export function Navigation({ navigation, settings }) {
                         <PrismicText field={slice.primary.name} />
                       </Box>
                     </PrismicLink>
+
                     {slice.items.length > 0 && (
                       <Box color="#000" className="dropdown-content" onClick={onClose}>
                         {slice.items.map((item, i) => {

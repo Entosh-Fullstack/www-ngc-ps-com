@@ -14,7 +14,7 @@ const CardsSection = ({ slice }) => (
       px={useBreakpointValue({ base: 4, md: 8 })}
     >
       <Box
-        p={{ base: "15vw 0 4vw", lg: "68px 0 0" }}
+        p={{ base: "15vw 0 4vw", lg: "72px 0 0" }}
         _before={{
           content: `""`,
           position: "absolute",
@@ -23,15 +23,16 @@ const CardsSection = ({ slice }) => (
           left: "0",
           mt: "-8px",
           w: "95px",
-          borderTop: "4px solid #4d8b3f",
+          borderTop: "8px solid #4d8b3f",
         }}
       >
         <Box
-          py="10px"
+          pt="8px"
+          pb="14px"
           margin="auto"
           w={{ base: "64%", lg: "full" }}
           color="#53575a"
-          fontSize={{ base: "5vw", lg: "45px" }}
+          fontSize={{ base: "5vw", lg: "44px" }}
           lineHeight={1.2}
           textAlign="center"
         >
@@ -43,7 +44,7 @@ const CardsSection = ({ slice }) => (
         <Flex
           flexWrap={{ base: "wrap", xl: "nowrap" }}
           justifyContent={"space-between"}
-          p="30px 0 70px"
+          p="30px 0 10%"
           w={{ base: "86%", lg: "93%" }}
         >
           {
@@ -95,8 +96,7 @@ const CardsSection = ({ slice }) => (
         <Flex
           flexWrap={{ base: "wrap" }}
           justifyContent={{ base: "space-evenly", sm: "space-between" }}
-
-          p="30px 0 70px"
+          p="30px 0 10%"
           w={{ base: "full", sm: "86%", lg: "full" }}
         >
           {
