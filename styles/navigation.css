@@ -77,3 +77,12 @@ body .logo-burger-container img {
     display: none;
   }
 }
+
+body .navbar {
+  transition: ease-in-out 0.2s;
+}
+
+body .navbar.sticky-nav {
+  top: 0;
+  transition: ease-in-out 0.2s;
+}
