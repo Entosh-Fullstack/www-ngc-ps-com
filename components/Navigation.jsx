@@ -16,13 +16,18 @@ import {
   useDisclosure,
   Stack,
   Text,
+  useOutsideClick,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-
 import React, { useState, useEffect } from "react";
 
 export function Navigation({ navigation, settings }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const ref = React.useRef();
+  useOutsideClick({
+    ref: ref,
+    handler: () => onClose(false),
+  });
 
   // Sidemenu scroll animation
   const [stickyClass, setStickyClass] = useState("");
@@ -37,6 +42,7 @@ export function Navigation({ navigation, settings }) {
     }
   };
   // Sidemenu scroll animation
+
   return (
     <Box>
       <Flex
@@ -97,7 +103,6 @@ export function Navigation({ navigation, settings }) {
                         mr={"20px"}
                         color={"#fff"}
                         borderRadius={"0"}
-                        _hover={{}}
                       >
                         <PrismicLink document={slice.primary.button_link}>
                           <PrismicText field={slice.primary.button_text} />
@@ -169,7 +174,6 @@ export function Navigation({ navigation, settings }) {
           >
             {/* Desktop */}
             <Stack
-              display={{ base: "none", md: "flex" }}
               as={"nav"}
               spacing={4}
               bg="#fff"
@@ -295,7 +299,6 @@ export function Navigation({ navigation, settings }) {
                               mr={"20px"}
                               color={"#fff"}
                               borderRadius={"0"}
-                              _hover={{}}
                             >
                               <PrismicLink document={slice.primary.button_link}>
                                 <PrismicText

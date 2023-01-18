@@ -47,7 +47,6 @@ const HeroSection = ({ slice }) => (
             pb={{ base: "5%", md: "262px" }}
             m="auto"
           >
-
             {
               slice?.items?.map((item, i) =>
                 <Flex key={i}
@@ -56,6 +55,7 @@ const HeroSection = ({ slice }) => (
                   gap={{ base: "10px", sm: "20px" }}
                   pb={{ base: "30px", md: "50px" }}
                   w={{ base: "99%", md: "45%", lg: "24%" }}
+                  className="grid-items-container"
                 >
                   <Image
                     src={item.image.url}
@@ -66,7 +66,8 @@ const HeroSection = ({ slice }) => (
                     align="left"
                     color="#fff"
                     fontSize={{ base: "6vw", md: "30px" }}
-                    fontWeight="500" textAlign={{ base: "left", md: "center", xl: "left" }} >
+                    fontWeight="500" textAlign={{ base: "left", md: "center", xl: "left" }}
+                  >
                     <PrismicRichText field={item.image_title} />
                   </Box>
                 </Flex>
@@ -83,6 +84,6 @@ const HeroSection = ({ slice }) => (
           background-position: center;
         }
     `}</style>
-  </section>
+  </section >
 )
 export default HeroSection

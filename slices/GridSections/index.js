@@ -77,6 +77,7 @@ const GridSection = ({ slice }) => (
               }
               <Box
                 my="10px"
+                pb="20px"
                 color="#626669"
                 fontSize="18px"
                 fontWeight="bold"
