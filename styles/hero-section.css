@@ -1,0 +1,9 @@
+.grid-items-container a {
+  border-bottom: transparent 5px solid;
+  transition: 0.4s;
+}
+
+.grid-items-container:hover a {
+  border-bottom: #ff3e34 5px solid;
+  transition: 0.4s;
+}

@@ -23,7 +23,6 @@ const ProductDetail = ({ slice }) => (
     >
       <Flex
         justifyContent={"center"}
-        className="backgroundTHISBOX"
         bg={"radial-gradient(#d8d6d6, #54575a)"}
         p="10px"
         borderRight={{ base: "none", md: "solid 4px #ef483e" }}
