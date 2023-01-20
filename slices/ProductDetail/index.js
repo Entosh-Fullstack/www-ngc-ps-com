@@ -3,13 +3,6 @@ import {
   Flex,
   Grid,
   Box,
-  Table,
-  Thead,
-  Tbody,
-  Tr,
-  Th,
-  Td,
-  TableContainer,
 } from "@chakra-ui/react";
 import { PrismicRichText } from "@prismicio/react";
 import React from 'react'
@@ -76,49 +69,40 @@ const ProductDetail = ({ slice }) => (
     <Flex
       flexDirection="column"
       m="auto"
-      w={{ base: "85%", xl: "60%" }}
+      w={{ base: "88%", xl: "60%" }}
       fontSize={{ base: "14px", md: "16px" }}
       color="#53575a"
     >
-      <TableContainer>
-        <Table variant='simple'>
-          <Thead>
-            <Tr
-              p="16px"
-              bg="#0070c0">
-              {slice?.items?.map((item, i) =>
-                <>
-                  {item.add_table_category ?
-                    <Th
-                      key={i}
-                      color="#fff"
-                      fontWight="300"
-                    >
-                      <PrismicRichText field={item.table_category} />
-                    </Th>
-                    : ''}
-                </>
-              )}
-            </Tr>
-          </Thead>
-          <Tbody>
-            <Tr fontSize="16px">
-              {slice?.items?.map((item, i) =>
-                <>
-                  {item.add_table_category ? '' :
-                    <Td
-                      key={i}
-                      p="0"
-                      className="child">
-                      <PrismicRichText field={item.table_class} />
-                    </Td>
-                  }
-                </>
-              )}
-            </Tr>
-          </Tbody>
-        </Table>
-      </TableContainer>
+      <Flex justify={"center"} className="working here">
+        <Flex direction={"row"} w="100%" overflow={{ base: "scroll", md: "unset" }} >
+          {slice?.items?.map((item, i) =>
+            <>
+              <Flex direction={"column"} w="inherit">
+                <Box
+                  p="16px"
+                  bg="#0070C0"
+                >
+                  <Box
+                    key={i}
+                    color="#fff"
+                    fontWight="300"
+                  >
+                    <PrismicRichText field={item.table_category} />
+                  </Box>
+                </Box>
+                <Box
+                  key={i}
+                  p="0"
+                  className="child"
+                  height={"100%"}
+                >
+                  <PrismicRichText field={item.table_class} />
+                </Box>
+              </Flex>
+            </>
+          )}
+        </Flex>
+      </Flex>
     </Flex>
 
     <Flex
@@ -133,16 +117,18 @@ const ProductDetail = ({ slice }) => (
         margin="auto"
         mt="0"
         color="#53575a"
+        className="content-container"
       >
         <PrismicRichText field={slice.primary.product_details_right} />
       </Box>
       <Box
         w={{ base: "100%", xl: "38%" }}
-        p="42px 2%"
+        p={{ base: "20px 2%", md: "42px 2%" }}
         mt={{ base: "30px", xl: "0" }}
         color="#fff"
         bg={"#00629b"}
         borderLeft={{ base: "none", md: "solid 4px #ef483e" }}
+        className="form-container"
       >
         <Box w="85%" m="auto">
           <PrismicRichText field={slice.primary.product_resources_left} />
@@ -187,7 +173,6 @@ const ProductDetail = ({ slice }) => (
             <button className='btn' type="submit">Submit</button>
           </Box>
         </form>
-
       </Box>
     </Flex >
   </>

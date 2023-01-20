@@ -23,11 +23,11 @@ import React, { useState, useEffect } from "react";
 
 export function Navigation({ navigation, settings }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const ref = React.useRef();
-  useOutsideClick({
-    ref: ref,
-    handler: () => onClose(false),
-  });
+  // const ref = React.useRef();
+  // useOutsideClick({
+  //   ref: ref,
+  //   handler: () => onClose(false),
+  // });
 
   // Sidemenu scroll animation
   const [stickyClass, setStickyClass] = useState("");
