@@ -32,9 +32,6 @@
             "footer": {
               "type": "SharedSlice"
             },
-            "news": {
-              "type": "SharedSlice"
-            },
             "team_profile": {
               "type": "SharedSlice"
             },
@@ -45,6 +42,9 @@
               "type": "SharedSlice"
             },
             "banner_section_with_side_content": {
+              "type": "SharedSlice"
+            },
+            "news": {
               "type": "SharedSlice"
             }
           }

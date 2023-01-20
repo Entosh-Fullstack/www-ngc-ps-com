@@ -144,7 +144,7 @@ interface HomepageDocumentData {
  * Slice for *homepage → Slice Zone*
  *
  */
-type HomepageDocumentDataSlicesSlice = HeaderSlice | HeroSectionSlice | CertificationSlice | TeamDropdownSlice | FooterSlice | NewsSlice | TeamProfileSlice | AboutSlice | BannerSectionWithMiddleContentSlice | BannerSectionWithSideContentSlice;
+type HomepageDocumentDataSlicesSlice = HeaderSlice | HeroSectionSlice | CertificationSlice | TeamDropdownSlice | FooterSlice | TeamProfileSlice | AboutSlice | BannerSectionWithMiddleContentSlice | BannerSectionWithSideContentSlice | NewsSlice;
 /**
  * homepage document from Prismic
  *

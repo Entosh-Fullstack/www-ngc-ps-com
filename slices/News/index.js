@@ -28,7 +28,7 @@ const News = ({ slice }) => (
         w='100%'
         h='400px'
         bg='blue'
-        bgImage="https://www.ngc-ps.com/wp-content/uploads/2019/02/ngc-home-banner-green.png"
+        bgImage={`url(${slice.primary.background_image.url})`}
         bgSize='cover'
         bgAttachment='fixed'
         bgPos='50% 100%'

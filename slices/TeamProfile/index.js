@@ -24,11 +24,10 @@ const TeamProfile = ({ slice }) => (
   <section>
     <Flex flexDirection="column">
       <Flex
-
         w='100%'
         h='400px'
         bg='blue'
-        bgImage="https://www.ngc-ps.com/wp-content/uploads/2019/02/ngc-home-banner-blue.png"
+        bgImage={`url(${slice.primary.background_image.url})`}
         bgSize='cover'
         bgAttachment='fixed'
         bgPos='50% 100%'
