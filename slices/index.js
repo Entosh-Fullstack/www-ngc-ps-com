@@ -10,8 +10,6 @@ import Footer from './Footer';
 import GridSections from './GridSections';
 import Header from './Header';
 import HeroSection from './HeroSection';
-import IndustriesBanner from './IndustriesBanner';
-import IndustriesContent from './IndustriesContent';
 import Logo from './Logo';
 import Navigation from './Navigation';
 import News from './News';
@@ -36,8 +34,6 @@ export {
 	GridSections,
 	Header,
 	HeroSection,
-	IndustriesBanner,
-	IndustriesContent,
 	Logo,
 	Navigation,
 	News,
@@ -63,8 +59,6 @@ export const components = {
 	grid_sections: GridSections,
 	header: Header,
 	hero_section: HeroSection,
-	industries_banner: IndustriesBanner,
-	industries_content: IndustriesContent,
 	logo: Logo,
 	navigation: Navigation,
 	news: News,

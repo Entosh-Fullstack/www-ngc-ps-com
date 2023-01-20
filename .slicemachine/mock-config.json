@@ -98,17 +98,6 @@
         "items": {}
       }
     },
-    "IndustriesContent": {
-      "default": {
-        "primary": {},
-        "items": {}
-      }
-    },
-    "IndustriesBanner": {
-      "default": {
-        "primary": {}
-      }
-    },
     "Logo": {
       "default": {
         "primary": {}
