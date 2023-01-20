@@ -1,5 +1,12 @@
+.child ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .child li {
   padding: 16px 22px;
+  height: inherit;
   list-style: none;
 }
 
@@ -9,6 +16,11 @@
 
 .child li:nth-child(even) {
   background-color: #ebf3f5;
+}
+
+.content-container ol,
+.form-container ul {
+  margin-left: 20px;
 }
 
 .forms input,
@@ -30,7 +42,7 @@
 
 @media screen and (max-width: 1279px) {
   .forms {
-    width: 87%;
+    width: 95%;
     margin: auto;
   }
 }
