@@ -158,7 +158,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "C:\\Users\\Fullstack HQ\\Desktop\\www-ngc-ps-com\\slices\\About\\default\\preview.png",
+            "path": "C:\\Users\\FullstackHQ\\Desktop\\second life\\www-ngc-ps-com\\slices\\About\\default\\preview.png",
             "width": 1905,
             "height": 887
           }
@@ -248,7 +248,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "C:\\Users\\Fullstack HQ\\Desktop\\www-ngc-ps-com\\slices\\BannerSectionWithMiddleContent\\default\\preview.png",
+            "path": "C:\\Users\\FullstackHQ\\Desktop\\second life\\www-ngc-ps-com\\slices\\BannerSectionWithMiddleContent\\default\\preview.png",
             "width": 1904,
             "height": 263
           }
@@ -343,7 +343,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "C:\\Users\\Fullstack HQ\\Desktop\\www-ngc-ps-com\\slices\\BannerSectionWithSideContent\\default\\preview.png",
+            "path": "C:\\Users\\FullstackHQ\\Desktop\\second life\\www-ngc-ps-com\\slices\\BannerSectionWithSideContent\\default\\preview.png",
             "width": 1903,
             "height": 624
           }
@@ -452,7 +452,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "C:\\Users\\Fullstack HQ\\Desktop\\www-ngc-ps-com\\slices\\CardSection\\default\\preview.png",
+            "path": "C:\\Users\\FullstackHQ\\Desktop\\second life\\www-ngc-ps-com\\slices\\CardSection\\default\\preview.png",
             "width": 1922,
             "height": 612
           }
@@ -529,7 +529,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "C:\\Users\\Fullstack HQ\\Desktop\\www-ngc-ps-com\\slices\\Certification\\default\\preview.png",
+            "path": "C:\\Users\\FullstackHQ\\Desktop\\second life\\www-ngc-ps-com\\slices\\Certification\\default\\preview.png",
             "width": 1905,
             "height": 205
           }
@@ -626,7 +626,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "C:\\Users\\Fullstack HQ\\Desktop\\www-ngc-ps-com\\slices\\Contact\\default\\preview.png",
+            "path": "C:\\Users\\FullstackHQ\\Desktop\\second life\\www-ngc-ps-com\\slices\\Contact\\default\\preview.png",
             "width": 1903,
             "height": 805
           }
@@ -1039,7 +1039,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "C:\\Users\\Fullstack HQ\\Desktop\\www-ngc-ps-com\\slices\\HeroSection\\default\\preview.png",
+            "path": "C:\\Users\\FullstackHQ\\Desktop\\second life\\www-ngc-ps-com\\slices\\HeroSection\\default\\preview.png",
             "width": 1904,
             "height": 599
           }
@@ -1366,7 +1366,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "C:\\Users\\Fullstack HQ\\Desktop\\www-ngc-ps-com\\slices\\News\\default\\preview.png",
+            "path": "C:\\Users\\FullstackHQ\\Desktop\\second life\\www-ngc-ps-com\\slices\\News\\default\\preview.png",
             "width": 1904,
             "height": 626
           }
@@ -1813,17 +1813,7 @@
               "docURL": "...",
               "version": "sktwi1xtmkfgx8626",
               "description": "SideDropdownWithContent",
-              "primary": {
-                "title": {
-                  "type": "StructuredText",
-                  "config": {
-                    "label": "Title",
-                    "placeholder": "This is where it all begins...",
-                    "allowTargetBlank": true,
-                    "single": "heading1"
-                  }
-                }
-              },
+              "primary": {},
               "items": {
                 "parent_menu_items": {
                   "type": "StructuredText",
@@ -1875,7 +1865,7 @@
                 "parent_menu_items": [
                   {
                     "type": "paragraph",
-                    "text": "Aliquip ad ut aute nostrud deserunt consequat officia.",
+                    "text": "Esse et velit nostrud dolore duis do laboris sit consectetur ea commodo ex dolor voluptate fugiat. Laboris id sint magna mollit id fugiat fugiat duis in aliquip exercitation cupidatat.",
                     "spans": []
                   }
                 ],
@@ -1883,28 +1873,20 @@
                 "parent_menu_items_content": [
                   {
                     "type": "paragraph",
-                    "text": "Commodo veniam velit ea.",
+                    "text": "Incididunt ex id est pariatur amet voluptate mollit deserunt quis in laborum.",
                     "spans": []
                   }
                 ],
                 "child_menu_items": [
                   {
                     "type": "paragraph",
-                    "text": "In reprehenderit id nisi ex aute ex anim. Magna sint tempor qui ea. Voluptate cillum aliqua ea exercitation ut aliquip incididunt excepteur aliquip labore est in sint amet labore.",
+                    "text": "Veniam sint sit excepteur ut et ex mollit pariatur. Qui incididunt ex labore duis ex aute velit pariatur dolor sint. Commodo est eiusmod amet ad ad ullamco aliqua nulla officia.",
                     "spans": []
                   }
                 ]
               }
             ],
-            "primary": {
-              "title": [
-                {
-                  "type": "heading1",
-                  "text": "Weather",
-                  "spans": []
-                }
-              ]
-            },
+            "primary": {},
             "slice_type": "side_dropdown_with_content"
           }
         },
@@ -2187,7 +2169,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "C:\\Users\\Fullstack HQ\\Desktop\\www-ngc-ps-com\\slices\\TeamProfile\\default\\preview.png",
+            "path": "C:\\Users\\FullstackHQ\\Desktop\\second life\\www-ngc-ps-com\\slices\\TeamProfile\\default\\preview.png",
             "width": 1904,
             "height": 881
           }
@@ -2513,7 +2495,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "C:\\Users\\Fullstack HQ\\Desktop\\www-ngc-ps-com\\slices\\VerticalNavigation\\default\\preview.png",
+            "path": "C:\\Users\\FullstackHQ\\Desktop\\second life\\www-ngc-ps-com\\slices\\VerticalNavigation\\default\\preview.png",
             "width": 1905,
             "height": 700
           }

@@ -1,12 +1,13 @@
-/* .css-15fwrin:last-child {
-  border-right: solid 1px #2c2e35;
-} */
 #grid-container .grid-item:last-child {
   border-right: none;
 }
 
 #grid-container .grid-item img {
   height: 80%;
+}
+
+#grid-container .links-container a:hover {
+  color: #ef483e;
 }
 
 @media only screen and (max-width: 1279px) {

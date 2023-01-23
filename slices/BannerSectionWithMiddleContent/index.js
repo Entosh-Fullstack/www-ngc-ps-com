@@ -24,7 +24,7 @@ const BannerSectionWithMiddleContent = ({ slice }) => (
               spacing={6}
             >
               <Text
-                py="35%"
+                // py="35%"
                 color="#fff"
                 fontSize={{ base: "3xl", lg: "4xl" }}
                 lineHeight={1.2}
@@ -68,7 +68,7 @@ const BannerSectionWithMiddleContent = ({ slice }) => (
               spacing={6}
             >
               <Text
-                py="35%"
+                // py="35%"
                 color="#fff"
                 fontSize={{ base: "3xl", lg: "4xl" }}
                 lineHeight={1.2}

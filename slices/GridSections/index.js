@@ -82,9 +82,10 @@ const GridSection = ({ slice }) => (
                 fontSize="18px"
                 fontWeight="bold"
                 textAlign="center"
-                _hover={{
-                  color: "#ef483e",
-                }}
+                // _hover={{
+                //   color: "#ef483e",
+                // }}
+                className={"links-container"}
               >
                 <Flex flexDirection="column">
                   <PrismicRichText field={item.text_content} />

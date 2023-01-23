@@ -162,14 +162,7 @@
     },
     "SideDropdownWithContent": {
       "default": {
-        "primary": {
-          "title": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          }
-        },
+        "primary": {},
         "items": {
           "parent_menu_items": {
             "config": {
