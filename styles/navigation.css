@@ -93,14 +93,14 @@ body .navbar {
 }
 
 body .navbar.sticky-nav {
-  top: 0;
+  top: 0 !important;
   transition: ease-in-out 0.2s;
   z-index: 1;
 }
 
 @media  (max-width: 1004px) and (min-width: 768px) {
   .navbar {
-    top: 94px !important;
+    top: 96px !important;
     
   }
 }
@@ -108,6 +108,12 @@ body .navbar.sticky-nav {
 @media  (max-width: 1279px) and (min-width: 1025px) {
   .navbar {
     top: 109px !important;
+  }
+}
+
+@media  (max-width: 1004px) and (min-width: 1024px) {
+  .navbar {
+    top: 96px !important;
   }
 }
 

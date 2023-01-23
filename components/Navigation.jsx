@@ -16,7 +16,6 @@ import {
   useDisclosure,
   Stack,
   Text,
-  useOutsideClick,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import React, { useState, useEffect } from "react";
@@ -58,7 +57,7 @@ export function Navigation({ navigation, settings }) {
           {navigation?.data?.slices.map((slice) => {
             return (
               <Flex key={slice.id} flexDirection="column">
-                <Breadcrumb fontSize={"26px"} color={"#fff"} as={"nav"}>
+                <Breadcrumb fontSize={{base:"18px", xl:"26px"}} color={"#fff"} as={"nav"}>
                   {slice.items.length > 0 && (
                     <BreadcrumbItem
                     display={{base:"block", sm:"flex"}}
@@ -172,7 +171,7 @@ export function Navigation({ navigation, settings }) {
             mr={{ base: "-24px", md: "unset" }}
             ml={{ base: "-24px", md: "unset" }}
             right={{ md: "0" }}
-            top={"84px"}
+            top={"85px"}
             pos={{ md: "fixed" }}
           >
             {/* Desktop */}
