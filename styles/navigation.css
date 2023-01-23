@@ -70,6 +70,7 @@ body .logo-burger-container img {
 .navbar .dropdown {
   margin-top: 11px;
 }
+
 .navbar .dropbtn {
   color: #4c4f51;
   font-size: 26px;
@@ -94,4 +95,28 @@ body .navbar {
 body .navbar.sticky-nav {
   top: 0;
   transition: ease-in-out 0.2s;
+  z-index: 1;
+}
+
+@media  (max-width: 1004px) and (min-width: 768px) {
+  .navbar {
+    top: 94px !important;
+    
+  }
+}
+
+@media  (max-width: 1279px) and (min-width: 1025px) {
+  .navbar {
+    top: 109px !important;
+  }
+}
+
+body .nav-bar-container {
+  padding: 16px 8% 19px 0;
+}
+
+@media  (max-width: 1024px) {
+  body .nav-bar-container {
+    padding: 10px 10px !important;
+  }
 }

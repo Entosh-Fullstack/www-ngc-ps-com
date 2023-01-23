@@ -18,7 +18,7 @@ import {
   Text,
   useOutsideClick,
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import React, { useState, useEffect } from "react";
 
 export function Navigation({ navigation, settings }) {
@@ -51,23 +51,25 @@ export function Navigation({ navigation, settings }) {
         bg={"#4c4f51"}
         alignItems={"center"}
         justifyContent={"end"}
-        flexDirection={{ base: "column", md: "row" }}
+        flexDirection={{ base: "column", xl: "row" }}
         className="nav-bar-container"
       >
         <Box display={{ base: "none", md: "unset" }}>
           {navigation?.data?.slices.map((slice) => {
             return (
-              <Flex key={slice.id}>
+              <Flex key={slice.id} flexDirection="column">
                 <Breadcrumb fontSize={"16px"} color={"#fff"} as={"nav"}>
                   {slice.items.length > 0 && (
                     <BreadcrumbItem
+                    display={{base:"block", sm:"flex"}}
                       flexDirection={{ base: "column", sm: "row" }}
                       pb={{ base: "5px", sm: "unset" }}
+                      textAlign="center"
                     >
                       {slice.items.map((item, i) => {
                         return (
                           <PrismicLink field={item.contactlink} key={i}>
-                            <Box className="item">
+                            <Box className="item" >
                               {i != 0 && (
                                 <Text
                                   as="span"
@@ -124,11 +126,12 @@ export function Navigation({ navigation, settings }) {
         >
           <HStack spacing={8} alignItems={"center"}>
             <Flex
-              justifyContent={{ base: "center", md: "flex-start", lg: "end" }}
+              justifyContent={{ base: "flex-start", lg: "end" }}
             >
               <Box
                 h={{ base: "80%", sm: "100%" }}
                 w={{ base: "80%", sm: "100%" }}
+                
               >
                 <PrismicLink href="/">
                   {prismicH.isFilled.image(settings?.data?.logo) && (
@@ -182,13 +185,16 @@ export function Navigation({ navigation, settings }) {
               pl={{ base: "0", md: "41px" }}
               textAlign={{ base: "center", md: "left" }}
               fontSize="26px"
+              display={{base:"none", md:"flex"}}
             >
               {navigation?.data.slices.map((slice, i) => {
                 return (
-                  <Box key={slice.id} className="dropdown">
+                  <Box key={slice.id} className="dropdown" >
                     <PrismicLink field={slice.primary.link}>
-                      <Box className="dropbtn">
-                        <PrismicText field={slice.primary.name} />
+                      <Box className="dropbtn" >
+                        <Flex alignItems="center">
+                        <PrismicText field={slice.primary.name} />{slice.items.length > 0 && (<Box><ChevronRightIcon color="#ff3e34" fontSize="40px" /></Box>)}
+                        </Flex>
                       </Box>
                     </PrismicLink>
 
@@ -197,10 +203,11 @@ export function Navigation({ navigation, settings }) {
                         color="#000"
                         className="dropdown-content"
                         onClick={onClose}
+                        
                       >
                         {slice.items.map((item, i) => {
                           return (
-                            <Box key={i}>
+                            <Box key={i} >
                               <PrismicLink field={item.link}>
                                 <PrismicText field={item.name} />
                               </PrismicLink>

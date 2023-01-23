@@ -71,7 +71,7 @@ const VerticalNavigation = ({ slice }) => {
                 <TabPanels>
                   {
                     slice?.items?.map((item, i) =>
-                      <TabPanel
+                      <TabPanel key={i}
                         ml="25px"
                         color="#585c5e"
                         fontSize={20}
@@ -90,7 +90,7 @@ const VerticalNavigation = ({ slice }) => {
       <Box display={{ base: "block", sm: "block", md: "none", xl: "none" }}>
         <Swiper slidesPerView={3}>
           {items.map((item, i) =>
-            <SwiperSlide onClick={() => handleContact(item)}
+            <SwiperSlide key={i} onClick={() => handleContact(item)}
               style={{ display: 'flex', backgroundColor: product.navlist === item.navlist ? '#fff' : '#ef483e', color: product.navlist === item.navlist ? '#4D8B3F' : '#fff', height: '48px', paddingX: '10px', paddingLeft: '10px', borderColor: product.navlist === item.navlist ? '#4D8B3F' : '#fff', borderLeft: product.navlist === item.navlist ? '3px solid' : '', justifyContent: 'center', alignItems: 'center' }}>
               <Box>
                 {item.navlist}
