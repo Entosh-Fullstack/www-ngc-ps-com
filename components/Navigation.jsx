@@ -58,7 +58,7 @@ export function Navigation({ navigation, settings }) {
           {navigation?.data?.slices.map((slice) => {
             return (
               <Flex key={slice.id} flexDirection="column">
-                <Breadcrumb fontSize={"16px"} color={"#fff"} as={"nav"}>
+                <Breadcrumb fontSize={"26px"} color={"#fff"} as={"nav"}>
                   {slice.items.length > 0 && (
                     <BreadcrumbItem
                     display={{base:"block", sm:"flex"}}
@@ -193,7 +193,7 @@ export function Navigation({ navigation, settings }) {
                     <PrismicLink field={slice.primary.link}>
                       <Box className="dropbtn" >
                         <Flex alignItems="center">
-                        <PrismicText field={slice.primary.name} />{slice.items.length > 0 && (<Box><ChevronRightIcon color="#ff3e34" fontSize="40px" /></Box>)}
+                        <PrismicText field={slice.primary.name} />{slice.items.length > 0 && (<Box ><ChevronRightIcon color="#4c4f51" fontSize="36px" /></Box>)}
                         </Flex>
                       </Box>
                     </PrismicLink>
