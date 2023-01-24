@@ -7,7 +7,7 @@
         "parent_menu_items": [
           {
             "type": "paragraph",
-            "text": "Aliquip ad ut aute nostrud deserunt consequat officia.",
+            "text": "Esse et velit nostrud dolore duis do laboris sit consectetur ea commodo ex dolor voluptate fugiat. Laboris id sint magna mollit id fugiat fugiat duis in aliquip exercitation cupidatat.",
             "spans": []
           }
         ],
@@ -15,28 +15,20 @@
         "parent_menu_items_content": [
           {
             "type": "paragraph",
-            "text": "Commodo veniam velit ea.",
+            "text": "Incididunt ex id est pariatur amet voluptate mollit deserunt quis in laborum.",
             "spans": []
           }
         ],
         "child_menu_items": [
           {
             "type": "paragraph",
-            "text": "In reprehenderit id nisi ex aute ex anim. Magna sint tempor qui ea. Voluptate cillum aliqua ea exercitation ut aliquip incididunt excepteur aliquip labore est in sint amet labore.",
+            "text": "Veniam sint sit excepteur ut et ex mollit pariatur. Qui incididunt ex labore duis ex aute velit pariatur dolor sint. Commodo est eiusmod amet ad ad ullamco aliqua nulla officia.",
             "spans": []
           }
         ]
       }
     ],
-    "primary": {
-      "title": [
-        {
-          "type": "heading1",
-          "text": "Weather",
-          "spans": []
-        }
-      ]
-    },
+    "primary": {},
     "slice_type": "side_dropdown_with_content"
   }
 ]

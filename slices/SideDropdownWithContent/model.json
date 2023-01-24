@@ -10,17 +10,7 @@
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "SideDropdownWithContent",
-      "primary": {
-        "title": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Title",
-            "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "single": "heading1"
-          }
-        }
-      },
+      "primary": {},
       "items": {
         "parent_menu_items": {
           "type": "StructuredText",
