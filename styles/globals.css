@@ -91,6 +91,7 @@ textarea::placeholder {
 /* sample css for dropdown */
 .dropdown-content {
   display: none;
+  transition: all 1s ease-in;
 }
 
 .dropdown-content a {

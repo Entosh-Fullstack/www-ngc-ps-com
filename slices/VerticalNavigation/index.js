@@ -91,7 +91,7 @@ const VerticalNavigation = ({ slice }) => {
         <Swiper slidesPerView={3}>
           {items.map((item, i) =>
             <SwiperSlide key={i} onClick={() => handleContact(item)}
-              style={{ display: 'flex', backgroundColor: product.navlist === item.navlist ? '#fff' : '#ef483e', color: product.navlist === item.navlist ? '#4D8B3F' : '#fff', height: '48px', paddingX: '10px', paddingLeft: '10px', borderColor: product.navlist === item.navlist ? '#4D8B3F' : '#fff', borderLeft: product.navlist === item.navlist ? '3px solid' : '', justifyContent: 'center', alignItems: 'center' }}>
+              style={{ display: 'flex', backgroundColor: product.navlist === item.navlist ? '#fff' : '#ef483e', color: product.navlist === item.navlist ? '#4D8B3F' : '#fff', fontSize: '12px', height: '48px', paddingX: '20px', paddingLeft: '10px', borderColor: product.navlist === item.navlist ? '#4D8B3F' : '#fff', borderBottom: product.navlist === item.navlist ? '3px solid' : '', justifyContent: 'center', alignItems: 'center' }}>
               <Box>
                 {item.navlist}
               </Box>
